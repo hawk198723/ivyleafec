@@ -1,0 +1,4 @@
+header,body:has(.page-hero) header{position:fixed;top:0;left:0;right:0;background:transparent;z-index:20;transition:background .28s ease,box-shadow .28s ease,backdrop-filter .28s ease}
+header.scrolled{background:rgba(18,42,30,.82);backdrop-filter:blur(12px);box-shadow:0 3px 18px rgba(0,0,0,.14)}
+.page-hero{padding-top:210px}
+@media(max-width:800px){.page-hero{padding-top:145px}}
