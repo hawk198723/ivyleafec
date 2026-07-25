@@ -1,6 +1,3 @@
-/Users/jason/.rvm/scripts/rvm:29: operation not permitted: ps
-/opt/homebrew/Library/Homebrew/cmd/shellenv.sh: line 18: /bin/ps: Operation not permitted
-/Users/jason/.rvm/scripts/rvm:29: operation not permitted: ps
 # Ivy Leaf Education Center
 
 React website rebuild for Ivy Leaf Education Center.
