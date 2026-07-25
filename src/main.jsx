@@ -4,6 +4,7 @@ import './styles.css';
 import './mobile.css';
 import './home.css';
 import './legacy-home.css';
+import './type.css';
 
 const media='https://ivyleafec.com/wp-content/uploads/2024/06/';
 const pages=[['Home','/'],['Programs','/programs'],['Why Ivy Leaf','/why-ivy-leaf'],['Enrollment','/enrollment'],['News','/news'],['Summer Camps','/summer-camps'],['Contact','/contact']];
