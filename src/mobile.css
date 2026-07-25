@@ -1,0 +1,10 @@
+/Users/jason/.rvm/scripts/rvm:29: operation not permitted: ps
+/opt/homebrew/Library/Homebrew/cmd/shellenv.sh: line 18: /bin/ps: Operation not permitted
+/Users/jason/.rvm/scripts/rvm:29: operation not permitted: ps
+.menu{display:none;background:transparent;border:1px solid #174936;padding:8px 12px;color:#174936;font:700 13px 'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:800px){
+  header{height:76px;align-items:center;position:relative}
+  .brand img{width:48px;height:48px}.menu{display:block}
+  nav{display:none;position:absolute;top:76px;left:0;right:0;padding:18px 7%;background:#fff;box-shadow:0 8px 18px #163b2c18;flex-direction:column;align-items:flex-start}
+  nav.open{display:flex}nav a{font-size:16px}
+}
