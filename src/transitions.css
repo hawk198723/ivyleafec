@@ -1,4 +1,1 @@
-header.home-header{background:transparent}
-.route-view{animation:route-enter .38s cubic-bezier(.2,.75,.3,1) both}
-@keyframes route-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-@media(prefers-reduced-motion:reduce){.route-view{animation:none}}
+html{background:#f5f5ef}body{background:#f5f5ef}.route-view{animation:route-enter .32s cubic-bezier(.22,.7,.32,1) both;will-change:opacity,transform}.route-view.is-leaving{animation:route-leave .15s ease-out both;pointer-events:none}@keyframes route-enter{from{opacity:.76;transform:translateY(7px);filter:saturate(.96)}to{opacity:1;transform:translateY(0);filter:saturate(1)}}@keyframes route-leave{from{opacity:1;transform:translateY(0)}to{opacity:.86;transform:translateY(-4px)}}@media(prefers-reduced-motion:reduce){.route-view,.route-view.is-leaving{animation:none}}
