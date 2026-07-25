@@ -1,3 +1,5 @@
+/Users/jason/.rvm/scripts/rvm:29: operation not permitted: ps
+/opt/homebrew/Library/Homebrew/cmd/shellenv.sh: line 18: /bin/ps: Operation not permitted
 import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
@@ -7,6 +9,7 @@ import './legacy-home.css';
 import './type.css';
 import './transitions.css';
 import './fixed-header.css';
+import './full-image-pages.css';
 
 const media='https://ivyleafec.com/wp-content/uploads/2024/06/';
 const pages=[['Home','/'],['Programs','/programs'],['Why Ivy Leaf','/why-ivy-leaf'],['Enrollment','/enrollment'],['News','/news'],['Summer Camps','/summer-camps'],['Contact','/contact']];
@@ -24,3 +27,4 @@ function Contact(){return <Page title="Contact" image="8882a40f9696296b7c311e299
 function Page({title,image,children}){return <><section className="page-hero" style={{backgroundImage:`linear-gradient(90deg,rgba(22,58,48,.75),rgba(22,58,48,.15)),url(${media+image})`}}><h1>{title}</h1></section><main>{children}</main></>}
 function App(){const [p,setPath]=useState(location.pathname);useEffect(()=>{const onPop=()=>setPath(location.pathname);const onLink=e=>{const link=e.target.closest('a[href]');if(!link||e.defaultPrevented||e.metaKey||e.ctrlKey||e.shiftKey||link.target||link.origin!==location.origin)return;const href=link.getAttribute('href');if(!href?.startsWith('/'))return;e.preventDefault();history.pushState({},'',href);setPath(href);window.scrollTo({top:0,behavior:'smooth'});};window.addEventListener('popstate',onPop);document.addEventListener('click',onLink);return()=>{window.removeEventListener('popstate',onPop);document.removeEventListener('click',onLink)}} ,[]);let C=p==='/programs'?Programs:p==='/why-ivy-leaf'?Why:p==='/enrollment'?Enrollment:p==='/news'?News:p==='/summer-camps'?Camps:p==='/contact'?Contact:Home;return <><Header isHome={p==='/'}/><div className="route-view" key={p}><C/></div><footer>© {new Date().getFullYear()} Ivy Leaf Education Center · <a href="mailto:info@ivyleafec.com">info@ivyleafec.com</a></footer></>};
 createRoot(document.getElementById('root')).render(<App/>);
+/Users/jason/.rvm/scripts/rvm:29: operation not permitted: ps
