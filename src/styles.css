@@ -17,3 +17,6 @@
 
 /* Soft warm canvas behind page content for contrast with the white logo. */
 main,.intro{background:#fffdf5}
+
+/* Restore the original white content canvas. */
+main,.intro{background:#fff}
