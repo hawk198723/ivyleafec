@@ -20,3 +20,7 @@ main,.intro{background:#fffdf5}
 
 /* Restore the original white content canvas. */
 main,.intro{background:#fff}
+
+/* One consistent warm-white canvas through all content areas. */
+body,#root,main,.intro{background:#fffdf9!important}
+.program-grid article,main article,.cards a,.contact-details,.teacher-card,.campus-slider,.music-player{background:#fffdf9!important;border:1px solid #edf0e9}
